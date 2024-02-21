@@ -26,12 +26,13 @@
     <a-scene mindar-image="imageTargetSrc: ./targets (1).mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         <a-assets>
           <a-asset-item id="wolf" src="./aveAmarilla2.glb"></a-asset-item>
+          <audio id="river" src="./amarilla.wav"></audio>
         </a-assets>
   
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
   
         <a-entity mindar-image-target="targetIndex: 0">
-          <a-gltf-model rotation="0 0 0 " position="-0.65 -0.65 -0.65" scale="0.4 0.4 0.4" src="#wolf" animation-mixer="clip: Animacion 1; loop: true;">
+          <a-gltf-model rotation="0 0 0 " position="-0.65 -0.65 -0.65" scale="0.4 0.4 0.4" sound="src: #river; autoplay: true" src="#wolf" animation-mixer="clip: Animacion 1; loop: true;">
         </a-entity>
 
       </a-scene>
